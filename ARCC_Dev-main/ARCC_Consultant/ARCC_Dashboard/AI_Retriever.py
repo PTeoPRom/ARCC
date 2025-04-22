@@ -308,22 +308,29 @@ def llm_interact_partial_executive_report(data):
     ```
     {data}
     ```
-
-    **Tareas:**  
+**Tareas:**  
 
     1. **Análisis de Seguridad:** Revisa los datos y determina si hay indicios de una posible amenaza o actividad maliciosa.  
     2. **Resumen Ejecutivo:** Explica de manera sencilla qué ha ocurrido (si se detectó una amenaza), cuáles podrían ser las consecuencias y qué medidas se recomiendan tomar.  
     3. **Explicación No Técnica:** Evita términos altamente técnicos. Usa analogías o ejemplos cotidianos si es necesario.  
     4. **Plan de Acción:** Si se detecta una amenaza, proporciona recomendaciones claras y accionables.  
     5. **Tranquilidad o Advertencia:** Si no hay señales de compromiso, explica por qué el sistema parece seguro. Si hay riesgos, describe su impacto de forma clara y concisa.  
+    6. **Listado de Malware:** 
+    Proporciona un informe detallado con la siguiente información:
+    - Posible Tipo de Malware: Clasifica el malware según su tipo (por ejemplo, "Troyano", "Ransomware", "Spyware", "Virus", "Rootkit", "Adware", etc.).
+    - Probable Familia del Malware: Indica la familia a la que pertenece el malware (por ejemplo, "Emotet", "WannaCry", "Zeus", etc.).
+    - Posible Ubicación de archivo sospechoso: Proporciona las rutas de los archivos o directorios donde se encontró el malware (por ejemplo, "C:\Archivos de Programa\malware.exe").
+    7. **Fecha de infección:** 
+    Proporciona una estimación precisa de la fecha en la que ocurrió la infección, utilizando la siguiente información:
+    - Posible Fecha de Detección Inicial: Especifica la fecha en la que el malware fue detectado por el sistema de protección, el software antivirus o las herramientas de análisis de seguridad.
+    - Posible Fecha Estimada de Infección: Si no se puede determinar una fecha exacta, estima el rango de fechas en el que el malware pudo haber infectado el sistema basado en los eventos observados y los registros disponibles (por ejemplo, "Entre el 1 de marzo y el 5 de marzo").
 
     **Estructura del Reporte Ejecutivo:**  
 
     - **Resumen General:** Breve descripción de la situación.  
     - **Hallazgos Clave:** ¿Hubo actividad sospechosa? ¿Cuál es el posible impacto?  
     - **Recomendaciones:** Pasos claros y accesibles para mitigar o prevenir riesgos.  
-    - **Explicación en Términos Simples:** Usa lenguaje amigable para que cualquier persona pueda entender el riesgo y su importancia.  
-
+    - **Listado de Posibles Malwares:** Lista de posibles malware con su posible: familia, tipo, ubicacion y fecha de infección.
     🔎 **Ejemplo de Formato Final:**  
 
     **Resumen General:**  
@@ -335,9 +342,13 @@ def llm_interact_partial_executive_report(data):
     **Recomendaciones:**  
     "Se recomienda cambiar inmediatamente las contraseñas y actualizar los sistemas de seguridad para evitar posibles ataques."  
 
+    **Listado de Posibles Malwares:**
+    - **Malware 1:** Descripción del malware 1 con su posible familia, posible tipo, posible ubicacion y posible fecha de infección.
+    - **Malware 2:** Descripción del malware 2 con su posible familia, posible tipo, posible ubicacion y posible fecha de infección.
+    - **Malware 3:** Descripción del malware 3 con su posible familia, posible tipo, posible ubicacion y posible fecha de infección.
+
     **IMPORTANTE:**  
     La prioridad es que cualquier persona pueda comprender el reporte sin conocimientos previos en informática. Evita jergas técnicas innecesarias.  
-
 
     """
     try:
