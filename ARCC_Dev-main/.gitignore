@@ -1,0 +1,14 @@
+.env
+.venv/
+.testing_py/
+ARCC_Consultant/ARCC_Api/__pycache__/
+ARCC_Consultant/ARCC_Consultant/__pycache__/
+ARCC_Agent/Modules/__pycache__/
+ARCC_Agent/ARCC_Agent/__pycache__/
+ARCC_Consultant/ARCC_Api/migrations/
+ARCC_Consultant/db.sqlite3
+.spyproject/
+.vscode/
+ARCC_Consultant/ARCC_Dashboard/__pycache__/
+ARCC_Consultant/ARCC_Dashboard/migrations/
+ARCC_Consultant/ARCC_Dashboard/db.sqlite3

@@ -1,0 +1,8 @@
+djangorestframework 
+django
+openai
+tiktoken
+python-dotenv
+markdown
+pandas
+djangorestframework-simplejwt
